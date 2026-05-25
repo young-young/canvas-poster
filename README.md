@@ -1,6 +1,6 @@
 # Poster 海报生成工具类使用说明
 
-`utils/poster.js` 是一个基于 Uniapp 的多端（H5、小程序）Canvas 海报生成工具类。它支持通过配置化的方式，按图层顺序绘制图片、矩形、文本和线条，并最终导出为图片路径或 Base64 格式。
+`poster.js` 是一个基于 Uniapp 的多端（H5、小程序）Canvas 海报生成工具类。它支持通过配置化的方式，按图层顺序绘制图片、矩形、文本和线条，并最终导出为图片路径或 Base64 格式。
 
 ## 一、 基本使用方式
 
@@ -22,7 +22,7 @@
 在组件中引入 `Poster` 类，构建配置对象，并生成海报。
 
 ```javascript
-import Poster from '@/utils/poster.js';
+import Poster from './poster.js';
 
 export default {
   data() {
