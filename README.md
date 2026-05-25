@@ -23,6 +23,7 @@
 
 ```javascript
 import Poster from './poster.js';
+import { imageBase64 } from './imageBase64';
 
 export default {
   data() {
@@ -74,7 +75,18 @@ export default {
           offset_h: 350,
           w: 280,
           h: 350 // 注意线条的 w 和 h 实际代表结束点的 X 和 Y 坐标
-        }
+        },
+        // 网络图片跨域，自定义转换接口处理，默认可不传
+        DefaultCrossDomainEnabledFun: (url) => {
+          return new Promise(async function(resolve, reject) {
+            try {
+              const res = await imageBase64({ url })
+              resolve(res.data.code)
+            } catch (err) {
+              reject(err || '图片加载失败')
+            }
+          })
+        },
       };
 
       try {
