@@ -2,6 +2,11 @@
 
 `poster.js` 是一个基于 Uniapp 的多端（H5、小程序）Canvas 海报生成工具类。它支持通过配置化的方式，按图层顺序绘制图片、矩形、文本和线条，并最终导出为图片路径或 Base64 格式。
 
+## 示例
+
+<img width="409" height="896" alt="83f641e0fba10c139f0252fc8efb5879" src="https://github.com/user-attachments/assets/b6d625da-a5fc-4086-8d95-9b9d7f1f09ea" />
+<img width="412" height="894" alt="5a5ac8db3d80f518abf94abf6e0210a8" src="https://github.com/user-attachments/assets/79b9501f-3594-4823-9735-d6559a30ab82" />
+
 ## 一、 基本使用方式
 
 ### 1. 准备 Canvas 节点
